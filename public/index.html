@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Product Management Form</title>
+  </head>
+  <body>
+    <h1>Product Rapport</h1>
+    <form method="POST">
+      <div class="product">
+        <label for="product">Product:</label>
+        <select name="product_name">
+          <option value="T-shirt">T-shirt</option>
+          <option value="Jeans">Jeans</option>
+          <option value="Socks">Socks</option>
+        </select>
+      </div>
+      <div class="quantity">
+        <label for="quantity">Quantity:</label>
+        <select name="product_quantity">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select>
+      </div>
+      <div class="price">
+        <label for="price">Price:</label>
+        <select name="product_price">
+          <option value="100">100 DH</option>
+          <option value="200">200 DH</option>
+          <option value="300">300 DH</option>
+          <option value="400">400 DH</option>
+        </select>
+      </div>
+      <div class="size">
+        <label for="size">Size:</label>
+        <select name="product_size">
+          <option value="M">M</option>
+          <option value="L">L</option>
+          <option value="XL">XL</option>
+          <option value="XXL">XXL</option>
+        </select>
+      </div>
+      <div class="id">
+        <label for="id">Product ID:</label>
+        <input type="text" name="product_id" />
+      </div>
+      <button type="submit" formaction="/insert">INSERT</button>
+      <button type="submit" formaction="/update">UPDATE</button>
+      <button type="submit" formaction="/select">SELECT</button>
+      <button type="submit" formaction="/delete">DELETE</button>
+    </form>
+  </body>
+</html>
